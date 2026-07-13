@@ -1,28 +1,15 @@
-Find Second Largest Element
-public class Main {
-    public static void main(String[] args) {
+arr = [12, 45, 7, 89, 23]
 
-        int[] arr = {12, 45, 7, 89, 23};
+largest = float("-inf")
+second = float("-inf")
 
-        int largest = Integer.MIN_VALUE;
-        int secondLargest = Integer.MIN_VALUE;
+for i in range(len(arr)):
 
-        for (int num : arr) {
+    if arr[i] > largest:
+        second = largest
+        largest = arr[i]
 
-            if (num > largest) {
+    elif arr[i] > second and arr[i] != largest:
+        second = arr[i]
 
-                secondLargest = largest;
-                largest = num;
-
-            } else if (num > secondLargest && num != largest) {
-
-                secondLargest = num;
-
-            }
-
-        }
-
-        System.out.println("Second Largest = " + secondLargest);
-
-    }
-}
+print(second)
