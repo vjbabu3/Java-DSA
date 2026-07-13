@@ -1,22 +1,13 @@
-public class Main {
-    public static void main(String[] args) {
+arr = [2, 5, 8, 11, 14]
 
-        int[] arr = {2, 5, 8, 11, 14, 17};
+even = 0
+odd = 0
 
-        int even = 0;
-        int odd = 0;
+for i in range(len(arr)):
+    if arr[i] % 2 == 0:
+        even = even + 1
+    else:
+        odd = odd + 1
 
-        for (int num : arr) {
-
-            if (num % 2 == 0)
-                even++;
-            else
-                odd++;
-
-        }
-
-        System.out.println("Even = " + even);
-        System.out.println("Odd = " + odd);
-
-    }
-}
+print("Even =", even)
+print("Odd =", odd)
