@@ -1,19 +1,9 @@
-Find Smallest Element
-public class Main {
-    public static void main(String[] args) {
+arr = [12, 45, 7, 89, 23]
 
-        int[] arr = {12, 45, 7, 89, 23};
+smallest = arr[0]
 
-        int min = arr[0];
+for i in range(len(arr)):
+    if arr[i] < smallest:
+        smallest = arr[i]
 
-        for (int i = 1; i < arr.length; i++) {
-
-            if (arr[i] < min) {
-                min = arr[i];
-            }
-
-        }
-
-        System.out.println(min);
-    }
-}
+print(smallest)
