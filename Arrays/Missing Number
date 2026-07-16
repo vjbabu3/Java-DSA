@@ -1,0 +1,7 @@
+n = int(input("Enter N: "))
+arr = list(map(int, input("Enter array elements: ").split()))
+
+expected_sum = n * (n + 1) // 2
+actual_sum = sum(arr)
+
+print("Missing Number:", expected_sum - actual_sum)
